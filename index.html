@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudSpot &mdash; Monitor Your Cloud, Your Way</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 17.5a5.5 5.5 0 0 0-4.5-5.44V12a6 6 0 1 0-10.88 3.5H6a4 4 0 1 0 0 8h14a4 4 0 0 0 2-7.5z" fill="url(#g1)"/>
+          <defs>
+            <linearGradient id="g1" x1="4" y1="6" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#6366f1"/>
+              <stop offset="1" stop-color="#06b6d4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>CloudSpot</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#" class="btn-nav">Get Started</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="badge">Now in Public Beta &rarr;</div>
+      <h1>Monitor Your Cloud,<br/><span class="gradient-text">Your Way</span></h1>
+      <p class="hero-sub">CloudSpot gives you real-time visibility into your cloud infrastructure &mdash; costs, performance, and uptime &mdash; in one beautiful dashboard.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary">Start for Free</a>
+        <a href="#dashboard" class="btn btn-ghost">See Demo &darr;</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">10k+</span><span class="stat-label">Active Users</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">99.9%</span><span class="stat-label">Uptime</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">$2.1M</span><span class="stat-label">Cloud Costs Saved</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything you need to<br/><span class="gradient-text">own your cloud</span></h2>
+        <p>From cost tracking to anomaly detection, CloudSpot has you covered.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="background:linear-gradient(135deg,#6366f1,#818cf8)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Real-Time Dashboard</h3>
+          <p>Live metrics across all your cloud providers in a single pane of glass. AWS, GCP, Azure &mdash; unified.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background:linear-gradient(135deg,#06b6d4,#22d3ee)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Cost Forecasting</h3>
+          <p>ML-powered predictions alert you before costs spike. Set budgets and get notified the moment you&rsquo;re at risk.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background:linear-gradient(135deg,#10b981,#34d399)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Anomaly Detection</h3>
+          <p>Automatically flag unusual traffic, latency spikes, or error rates before they become incidents.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Smart Alerts</h3>
+          <p>Route alerts to Slack, PagerDuty, or email. Suppress noise with intelligent grouping and deduplication.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background:linear-gradient(135deg,#ec4899,#f472b6)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Multi-Cloud View</h3>
+          <p>Stop switching tabs. See your entire cloud estate &mdash; instances, buckets, databases &mdash; in one place.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Security Posture</h3>
+          <p>Continuous compliance checks against CIS benchmarks. Catch misconfigurations before attackers do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Dashboard Demo -->
+  <section class="dashboard-section" id="dashboard">
+    <div class="container">
+      <div class="section-header">
+        <h2>Live Dashboard <span class="gradient-text">Preview</span></h2>
+        <p>This is what your cloud looks like in CloudSpot.</p>
+      </div>
+      <div class="dashboard-shell">
+        <div class="dash-topbar">
+          <div class="dash-title">CloudSpot &mdash; Production Environment</div>
+          <div class="dash-controls">
+            <span class="dash-dot red"></span>
+            <span class="dash-dot yellow"></span>
+            <span class="dash-dot green"></span>
+          </div>
+        </div>
+        <div class="dash-body">
+          <aside class="dash-sidebar">
+            <div class="dash-nav-item active">Overview</div>
+            <div class="dash-nav-item">Compute</div>
+            <div class="dash-nav-item">Storage</div>
+            <div class="dash-nav-item">Costs</div>
+            <div class="dash-nav-item">Alerts</div>
+            <div class="dash-nav-item">Security</div>
+          </aside>
+          <main class="dash-main">
+            <div class="kpi-row">
+              <div class="kpi">
+                <div class="kpi-label">Monthly Spend</div>
+                <div class="kpi-value">$4,821</div>
+                <div class="kpi-delta up">&uarr; 3.2% vs last month</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-label">Active Instances</div>
+                <div class="kpi-value">142</div>
+                <div class="kpi-delta down">&darr; 5 stopped</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-label">Avg CPU</div>
+                <div class="kpi-value">38%</div>
+                <div class="kpi-delta neutral">&mdash; Healthy</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-label">Open Alerts</div>
+                <div class="kpi-value">3</div>
+                <div class="kpi-delta up">&uarr; 1 critical</div>
+              </div>
+            </div>
+            <div class="chart-row">
+              <div class="chart-card">
+                <div class="chart-title">Spend Over Time (30d)</div>
+                <div class="chart-area">
+                  <canvas id="spendChart"></canvas>
+                </div>
+              </div>
+              <div class="chart-card small">
+                <div class="chart-title">Cost by Provider</div>
+                <div class="provider-bars">
+                  <div class="pbar-row">
+                    <span>AWS</span>
+                    <div class="pbar"><div class="pbar-fill" style="width:62%;background:#f59e0b"></div></div>
+                    <span>62%</span>
+                  </div>
+                  <div class="pbar-row">
+                    <span>GCP</span>
+                    <div class="pbar"><div class="pbar-fill" style="width:25%;background:#6366f1"></div></div>
+                    <span>25%</span>
+                  </div>
+                  <div class="pbar-row">
+                    <span>Azure</span>
+                    <div class="pbar"><div class="pbar-fill" style="width:13%;background:#06b6d4"></div></div>
+                    <span>13%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Simple, <span class="gradient-text">transparent pricing</span></h2>
+        <p>No hidden fees. No vendor lock-in. Cancel any time.</p>
+      </div>
+      <div class="pricing-toggle">
+        <button class="toggle-btn active" onclick="setPricing('monthly')">Monthly</button>
+        <button class="toggle-btn" onclick="setPricing('annual')">Annual <span class="save-badge">Save 20%</span></button>
+      </div>
+      <div class="pricing-grid">
+        <div class="plan">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><span class="plan-currency">$</span><span class="plan-amount" data-monthly="0" data-annual="0">0</span><span class="plan-per">/mo</span></div>
+          <div class="plan-desc">Perfect for personal projects and small teams.</div>
+          <ul class="plan-features">
+            <li>Up to 5 resources</li>
+            <li>1 cloud provider</li>
+            <li>7-day data retention</li>
+            <li>Email alerts</li>
+          </ul>
+          <a href="#" class="btn btn-outline">Get Started Free</a>
+        </div>
+        <div class="plan featured">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price"><span class="plan-currency">$</span><span class="plan-amount" data-monthly="49" data-annual="39">49</span><span class="plan-per">/mo</span></div>
+          <div class="plan-desc">For growing teams who need full visibility.</div>
+          <ul class="plan-features">
+            <li>Unlimited resources</li>
+            <li>All cloud providers</li>
+            <li>90-day data retention</li>
+            <li>Slack + PagerDuty alerts</li>
+            <li>Anomaly detection</li>
+            <li>Cost forecasting</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Start 14-Day Trial</a>
+        </div>
+        <div class="plan">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price"><span class="plan-amount" data-monthly="Custom" data-annual="Custom">Custom</span></div>
+          <div class="plan-desc">For large orgs with advanced security needs.</div>
+          <ul class="plan-features">
+            <li>Everything in Pro</li>
+            <li>SSO / SAML</li>
+            <li>Custom retention</li>
+            <li>Dedicated support</li>
+            <li>SLA guarantee</li>
+            <li>On-premise option</li>
+          </ul>
+          <a href="#" class="btn btn-outline">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+              <path d="M22 17.5a5.5 5.5 0 0 0-4.5-5.44V12a6 6 0 1 0-10.88 3.5H6a4 4 0 1 0 0 8h14a4 4 0 0 0 2-7.5z" fill="url(#g2)"/>
+              <defs><linearGradient id="g2" x1="4" y1="6" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+            </svg>
+            <span>CloudSpot</span>
+          </a>
+          <p>Making cloud visibility simple for everyone.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h4>Product</h4><a href="#">Features</a><a href="#">Pricing</a><a href="#">Changelog</a></div>
+          <div class="footer-col"><h4>Company</h4><a href="#">About</a><a href="#">Blog</a><a href="#">Careers</a></div>
+          <div class="footer-col"><h4>Legal</h4><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Security</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CloudSpot. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
